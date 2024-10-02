@@ -1,14 +1,3 @@
-.carousel-container {
-  display: flex;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Tailwind CSS base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
