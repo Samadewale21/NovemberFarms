@@ -288,8 +288,8 @@ export function AppleCardsCarouselDemo() {
     content: <DummyContent />,
   },
   {
-    category: "Meat ",
-    title: "ISA.",
+    category: "Cow",
+    title: "Beef",
     src: "/images/cow.png",
     content: <DummyContent />,
   },
@@ -300,8 +300,8 @@ export function AppleCardsCarouselDemo() {
     content: <DummyContent />,
   },
   {
-    category: "Cow",
-    title: "Veterinary visit.",
+    category: "Cattle",
+    title: "Beef.",
     src: "/images/bull.jpg",
     content: <DummyContent />,
   },

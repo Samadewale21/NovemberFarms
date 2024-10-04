@@ -20,9 +20,9 @@ function Navbar({ className }) {
         <MenuItem setActive={setActive} active={active} item="About Us">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Our Vision</HoveredLink>
-            <HoveredLink href="/interface-design">Our Passion</HoveredLink>
-            <HoveredLink href="/seo">Our Success</HoveredLink>
-            <HoveredLink href="/branding">EHA Clinic</HoveredLink>
+            
+            <HoveredLink href="/AppleCardsCarouselDemo">Our Success</HoveredLink>
+            
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Services">
