@@ -40,7 +40,6 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
     }
   }, [initialScroll, items.length]);
 
-  // Memoizing scrollRight
   const scrollRight = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
@@ -115,16 +114,16 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
             ))}
           </div>
         </div>
-        <div className="flex justify-end gap-2 mr-10">
+        <div className="flex justify-end gap-2 mr-4 md:mr-10">
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 md:h-12 md:w-12 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
             <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 md:h-12 md:w-12 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
@@ -269,44 +268,43 @@ export function AppleCardsCarouselDemo() {
   );
 
   const data = [
-  {
-    category: "Poultry Birds",
-    title: "Poultry Bird.",
-    src: "/images/bird.jpg",
-    content: <DummyContent />,
-  },
-  {
-    category: "Eggs",
-    title: "Healthy eggs.",
-    src: "/images/eggs.jpg",
-    content: <DummyContent />,
-  },
-  {
-    category: "Poultry Bird",
-    title: "ISA.",
-    src: "/images/Isa.jpg",
-    content: <DummyContent />,
-  },
-  {
-    category: "Cow",
-    title: "Beef",
-    src: "/images/cow.png",
-    content: <DummyContent />,
-  },
-  {
-    category: "Health",
-    title: "Veterinary visit.",
-    src: "/images/doc.jpg",
-    content: <DummyContent />,
-  },
-  {
-    category: "Cattle",
-    title: "Beef",
-    src: "/images/bull.jpg",
-    content: <DummyContent />,
-  },
-];
-
+    {
+      category: "Poultry Birds",
+      title: "Poultry Bird.",
+      src: "/images/bird.jpg",
+      content: <DummyContent />,
+    },
+    {
+      category: "Eggs",
+      title: "Healthy eggs.",
+      src: "/images/eggs.jpg",
+      content: <DummyContent />,
+    },
+    {
+      category: "Poultry Bird",
+      title: "ISA.",
+      src: "/images/Isa.jpg",
+      content: <DummyContent />,
+    },
+    {
+      category: "Cow",
+      title: "Beef",
+      src: "/images/cow.png",
+      content: <DummyContent />,
+    },
+    {
+      category: "Health",
+      title: "Veterinary visit.",
+      src: "/images/doc.jpg",
+      content: <DummyContent />,
+    },
+    {
+      category: "Cattle",
+      title: "Beef",
+      src: "/images/bull.jpg",
+      content: <DummyContent />,
+    },
+  ];
 
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
