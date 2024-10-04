@@ -301,7 +301,7 @@ export function AppleCardsCarouselDemo() {
   },
   {
     category: "Cattle",
-    title: "Beef.",
+    title: "Beef",
     src: "/images/bull.jpg",
     content: <DummyContent />,
   },
