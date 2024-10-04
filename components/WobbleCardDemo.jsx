@@ -13,11 +13,10 @@ export function WobbleCardDemo() {
         <div className="max-w-xs">
           <h2
             className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Gippity AI powers the entire universe
+             Eggs
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+          Every morning, the farmer collects fresh, organic eggs from his hens, ready to sell at the local market.
           </p>
         </div>
         <Image
@@ -30,10 +29,10 @@ export function WobbleCardDemo() {
       <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-yellow-500">
         <h2
           className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          No shirt, no shoes, no weapons.
+          Cattle
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          If someone yells “stop!”, goes limp, or taps out, the fight is over.
+        The farmer raises a herd of cattle, focusing on sustainable practices to provide high-quality beef to his community
         </p>
       </WobbleCard>
       <WobbleCard
@@ -41,12 +40,10 @@ export function WobbleCardDemo() {
         <div className="max-w-sm">
           <h2
             className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
+            Birds
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+          The farmer carefully tends to his flock of hens, ensuring they are healthy and free-range for optimal egg production
           </p>
         </div>
         <Image

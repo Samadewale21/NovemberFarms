@@ -259,8 +259,8 @@ export function AppleCardsCarouselDemo() {
           <Image
             src="https://assets.aceternity.com/macbook.png"
             alt="UI"
-            height="500"
-            width="500"
+            height="100"
+            width="100"
             className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
           />
         </div>
@@ -269,14 +269,44 @@ export function AppleCardsCarouselDemo() {
   );
 
   const data = [
-    {
-      category: "Artificial Intelligence",
-      title: "You can do more with AI.",
-      src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      content: <DummyContent />,
-    },
-    // Additional items...
-  ];
+  {
+    category: "Poultry Birds",
+    title: "Poultry Bird.",
+    src: "/images/bird.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "Eggs",
+    title: "Healthy eggs.",
+    src: "/images/eggs.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "Poultry Bird",
+    title: "ISA.",
+    src: "/images/Isa.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "Meat ",
+    title: "ISA.",
+    src: "/images/cow.png",
+    content: <DummyContent />,
+  },
+  {
+    category: "Health",
+    title: "Veterinary visit.",
+    src: "/images/doc.jpg",
+    content: <DummyContent />,
+  },
+  {
+    category: "Cow",
+    title: "Veterinary visit.",
+    src: "/images/bull.jpg",
+    content: <DummyContent />,
+  },
+];
+
 
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
